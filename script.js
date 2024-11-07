@@ -29,7 +29,7 @@ const projects = [
     {
         id: 4,
         name: "The Big Bang Theory",
-        description: "A science project I made for school (got a 7 on it). My school uses the IB grading scale, 1-8. So a 7 is an A",
+        description: "A science project I made for school.",
         lastUpdated: "11/1/24 v0.13.9",
         video: "assets/videos/big-bang.webm",
         languages: ["HTML", "CSS", "Javascript"],
