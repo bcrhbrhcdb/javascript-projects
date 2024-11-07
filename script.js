@@ -34,12 +34,12 @@ function projectLayout() {
         projectElement.className = 'box';
         projectElement.innerHTML = `
             ${createLanguageButtons(project.languages)}
-            <a href="${project.link}" target="_blank">
                 <h3>${project.name}</h3>
                 <p>${project.description}</p>
                 <p>Last updated: ${project.lastUpdated}</p>
-                <video src="${project.video}" name="${project.id}" width="375" loop muted></video>
-            </a>
+                <a href="${project.link}" target="_blank">
+                    <video src="${project.video}" name="${project.id}" width="375" loop muted></video>
+                 </a>
         `;
         projectArea.appendChild(projectElement);
     });
