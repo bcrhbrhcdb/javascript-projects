@@ -1,3 +1,30 @@
 video:hover {
     cursor: pointer;
 }
+.box {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.languages button {
+    margin-right: 5px;
+}
+.languages{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    user-select: none;
+ 
+}
+.language{
+    padding: 5px;
+    margin: 5px;
+    background-color: grey;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+    transform: translateY(0);
+}
+.language:hover{
+    transform: translateY(-5px);
+}
