@@ -3,7 +3,7 @@ const projects = [
         id: 1,
         name: "Noobs Unblocked Games",
         description: "My biggest project",
-        lastUpdated: "10/10/24 8:20AM",
+        lastUpdated: "10/10/24 8:20AM v0.6.0",
         video: "assets/videos/noobs-unblocked-games.mp4",
         languages: ["HTML", "CSS", "Javascript"],
         link: "https://bcrhbrhcdb.github.io/Noobs-Unblocked-Games-POST-BETA/",
@@ -12,11 +12,29 @@ const projects = [
         id: 2,
         name: "Random Symbol Generator",
         description: "Just a fun project I made.",
-        lastUpdated: "10/9/24",
+        lastUpdated: "10/9/24 v1.0.0",
         video: "assets/videos/random-symbol-generator.mp4",
         languages: ["HTML", "CSS", "Javascript"],
         link: "https://bcrhbrhcdb.github.io/random-letter-generator/"
-    }
+    },
+    {
+        id: 3,
+        name: "Recipe Book App",
+        description: "Unfinished.",
+        lastUpdated: "11/4/24 v0.0.1",
+        video: "assets/videos/random-symbol-generator.mp4",
+        languages: ["HTML", "CSS", "Javascript"],
+        link: "https://bcrhbrhcdb.github.io/random-letter-generator/"
+    },
+    {
+        id: 4,
+        name: "The Big Bang Theory",
+        description: "A science project I made for school (got a 7 on it). My school uses the IB grading scale, 1-8. So a 7 is an A",
+        lastUpdated: "11/1/24 v0.13.9",
+        video: "assets/videos/big-bang.webm",
+        languages: ["HTML", "CSS", "Javascript"],
+        link: "https://bcrhbrhcdb.github.io/The-Big-Bang-Theory/index.html"
+    },
 ];
 
 function createLanguageButtons(languages) {
@@ -33,13 +51,15 @@ function projectLayout() {
         const projectElement = document.createElement('div');
         projectElement.className = 'box';
         projectElement.innerHTML = `
-            ${createLanguageButtons(project.languages)}
+        <div class="project-content">
                 <h3>${project.name}</h3>
                 <p>${project.description}</p>
                 <p>Last updated: ${project.lastUpdated}</p>
                 <a href="${project.link}" target="_blank">
                     <video src="${project.video}" name="${project.id}" width="375" loop muted></video>
                  </a>
+                 ${createLanguageButtons(project.languages)}
+                </div>
         `;
         projectArea.appendChild(projectElement);
     });
