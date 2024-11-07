@@ -32,7 +32,7 @@ function projectLayout() {
                 <h3>${project.name}</h3>
                 <p>${project.description}</p>
                 <p>Last updated: ${project.lastUpdated}</p>
-                <video src="${project.video}" name="${project.id}" width="375" controls></video>
+                <video src="${project.video}" name="${project.id}" width="375"></video>
             </a>
         `;
         projectArea.appendChild(projectElement);
