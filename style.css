@@ -24,7 +24,7 @@ body {
     background-color: #2d004f;
     border-radius: 5px;
     width: calc(33.33% - 20px);
-    max-width: 400px;
+    max-width: 350px;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
@@ -59,7 +59,7 @@ a:visited {
 .languages {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     margin-bottom: 10px;
 }
 
