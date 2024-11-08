@@ -2,8 +2,8 @@ const projects = [
     {
         id: 1,
         name: "Noobs Unblocked Games",
-        description: "My biggest project",
-        lastUpdated: "10/10/24 8:20AM v0.6.0",
+        description: "My biggest project. Always being updated!",
+        lastUpdated: "11/7/24 2:34p.m CST v0.6.15 ",
         video: "assets/videos/noobs-unblocked-games.mp4",
         languages: ["HTML", "CSS", "Javascript"],
         link: "https://bcrhbrhcdb.github.io/Noobs-Unblocked-Games-POST-BETA/",
